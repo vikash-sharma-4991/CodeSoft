@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/sofa5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+span h1{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.logo{
+    width: 80px;
+    border-radius: 50%;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: 0.4s;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+/* .nav-links ul li::after{
+    content: "";
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+} */
+/* .nav-links ul li:hover::after{
+    width: 100%;
+} */
+.nav-links ul li:nth-child(1){
+    border: 2px solid #f44336;
+    border-radius: 20px;
+    background: #f75448;
+}
+.nav-links ul li:hover{
+    border: 2px solid #f44336;
+    border-radius: 20px;
+    background: #f75448;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.visit-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.visit-btn:hover{
+    border: 2px #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa-solid{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/* -------------Services------------- */
+.service{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.service h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.service-col{
+    flex-basis: 28%;
+    background: #e7e4e4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.service-col img{
+    width: 100%;
+}
+.service-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.view-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.view-btn:hover{
+    border: 2px #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.service-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    flex-basis: 30%;
+    
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* ---------- Furniture Services About Us ---------- */
+.aboutus{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.about-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 50%;
+    background: #fff;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 15px 12px;
+
+    box-sizing: border-box;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h3{
+    padding-left: 10px;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 30px;
+}
+.about-col p{
+    font-size: 15px;
+}
+.read-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+    border: 2px solid #f75448;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 12px 34px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.read-btn:hover{
+    border: 2px #f44336;
+    background: #f44336;
+}
+/*-------- Banner -----------*/
+.banner{
+    margin: 100px auto;
+    width: 98%;
+    background: linear-gradient(rgba(53, 52, 52, 0.7),rgba(44, 26, 26, 0.6)),url(images/sofa4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0px;
+}
+.banner h1{
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.order-btn{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.order-btn:hover{
+    background-color: #f44336;
+}
+@media(max-width:700px){
+    .banner h1{
+        font-size: 24px;
+    }
+}
+/*----------- 50% Off Product-----------*/
+.perce{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+.perce h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.perce-row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.perce-col{
+    flex-basis: 28%;
+    background: #e7e4e4;
+    border-radius: 10px;
+    margin:10px;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+.perce-col:hover{
+    transform: translateY(-20px);
+    flex-basis: 35%;
+}
+.perce img{
+    width: 100%;
+    margin-top: -20px;
+}
+.perce-col h3{
+    text-align: center;
+}
+.perce-col h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.perce-order{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #000;
+    border: 2px solid #f44336;
+    padding: 5px 30px;
+    transition: 0.5s;
+}
+.perce-order:hover{
+    background-color: #f44336;
+}
+/*----------------- Our Gallery ---------------*/
+.gallery{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.gallery h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.gallery-row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.gallery-col img{
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.gallery-col img:hover{
+    transform: translate(30px,-20px);
+
+}
+/*------------ Customer Review  -------------------*/
+.cusreview{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.cusreview h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.cusreview-row{
+    margin-top: 100px;
+    margin-top: 5%;
+    /* margin-left: 10%; */
+    display: flex;
+    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.cusreview-col{
+    flex-basis: 22%;
+    border-radius: 10px;
+    margin:10px;
+    text-align: left;
+    background: #e7e4e4;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.4s ease;
+}
+.cusreview-col img{
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.cusreview-col:hover{
+    flex-basis: 50%;
+}
+.cusreview-col p{
+    padding: 0;
+}
+.cusreview-col .fa-solid{
+    color: #f44336;
+}
+@media(max-width:700px){
+    .cusreview-col img
+    {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+/*----------------- Address --------------*/
+.touch{
+    width: 100%;
+    margin-top: 100px;
+    /* margin: auto; */
+    padding-top: 50px;
+    text-align: center;
+    background-color: #f0ebeb;
+}
+.touch-row{
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f0ebeb; */
+}
+.touch-row h2{
+    margin-left: 10px;
+}
+.touch-col{
+    flex-basis: 50%;
+    /* background: #fff; */
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 15px 12px;
+
+    box-sizing: border-box;
+}
+
+.touch-col .info p{
+    font-size: 15px;
+    color: #f44336;
+}
+.touch-col input{
+    width: 30%;
+}
+.send-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+    border: 2px solid #f75448;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 8px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.send-btn:hover{
+    border: 2px #f44336;
+    background: #f44336;
+}
+#detail{
+    width: 70%;
+    margin: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: #fff;
+    height: 2rem;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#message{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+/*------------------ footer ----------------------- */
+footer{
+    width: 100%;
+    background-color: #f0ebeb;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+.footer-logo h1{
+    color: #000;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.footer-logo.logo{
+    width: 80px;
+    border-radius: 50%;
+}
+.footer-logo img{
+    width: 100px;
+}
+.footer-icon{
+    /* margin-bottom: 50px; */
+    margin-right: 100px;
+}
+.footer-icon .fa-brands{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+footer p{
+    color: #000;
+}
+footer b{
+    color: red;
+}
